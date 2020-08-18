@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Caesar cypher</title>
+</head>
+<body>
+    <div class="container">
+        <label for="textInput"><strong>Enter a text to encode/decode:</strong></label>
+        <input type="text" name="text" id="textInput" class="textInput" placeholder="Enter a text here">
+        <br>
+        <label for="shiftNumber"><strong>Enter shift number</strong></label> <br>
+        <input type="number" name="number" id="shiftNumber" class="shiftNumber" placeholder="Enter shift number">
+        <br>
+        <button type="button" class="encrypt" onclick="event.preventDefault(encrypt())">Encode</button>
+        <button  class="decrypt" onclick="event.preventDefault(decrypt())">Decode</button>
+        <br>
+        <div  id="output" class="output"></div>
+   </div>
+   
+   <script src="javascript.js"></script>
+</body>
+</html>
