@@ -7,16 +7,23 @@
     <title>Caesar cypher</title>
 </head>
 <body>
-    <div class="container">
+   
+    <div class="container"> 
+        <h1 class="h1"><strong>Encode or decode alphabet</strong></h1>
+        
         <label for="textInput"><strong>Enter a text to encode/decode:</strong></label>
         <input type="text" name="text" id="textInput" class="textInput" placeholder="Enter a text here">
         <br>
+
         <label for="shiftNumber"><strong>Enter shift number</strong></label> <br>
         <input type="number" name="number" id="shiftNumber" class="shiftNumber" placeholder="Enter shift number">
         <br>
+
         <button type="button" class="encrypt" onclick="event.preventDefault(encrypt())">Encode</button>
+
         <button  class="decrypt" onclick="event.preventDefault(decrypt())">Decode</button>
         <br>
+
         <div  id="output" class="output"></div>
    </div>
    
